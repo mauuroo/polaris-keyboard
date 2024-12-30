@@ -18,19 +18,20 @@ enum custom_keycodes {
     MACRO_DISCORD = SAFE_RANGE, // Macro para Discord
     MACRO_SPOTIFY,              // Macro para Spotify
     MACRO_ENV,                  //Macro para activar entorno virtual
-    MACRO_MOVE_TO_MONITOR       //Macro para mover ventana a otro monitor
+    MACRO_MOVE_TO_MONITOR,       //Macro para mover ventana a otro monitor
+    MACRO_FXSOUND,              //Macro para enfocar FXSound
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case MACRO_DISCORD:
             if (record->event.pressed) {
-                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "discord" SS_DELAY(250) SS_TAP(X_ENTER));
+                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "discord" SS_DELAY(200) SS_TAP(X_ENTER));
             }
             break;
         case MACRO_SPOTIFY:
             if (record->event.pressed) {
-                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "spotify" SS_DELAY(250) SS_TAP(X_ENTER));
+                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "spotify" SS_DELAY(200) SS_TAP(X_ENTER));
             }
             break;
         case MACRO_ENV:
@@ -41,6 +42,11 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
         case MACRO_MOVE_TO_MONITOR:
             if (record->event.pressed) {
                 SEND_STRING(SS_DOWN(X_RGUI) SS_DOWN(X_LSFT) SS_TAP(X_RIGHT) SS_UP(X_RGUI) SS_UP(X_LSFT));
+            }
+            break;
+        case MACRO_FXSOUND:
+            if (record->event.pressed) {
+                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "FxSound" SS_DELAY(200) SS_TAP(X_ENTER));
             }
             break;
     }
@@ -72,9 +78,9 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
         _______, _______, _______,          _______,         _______,           _______,        _______,                                     _______, _______,  _______
     ),
     [_LAYER2] = LAYOUT_all( /* Capslock Layer (for macros)*/
-        C(KC_GRAVE),           _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
+        C(KC_GRAVE),           _______,  _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         MACRO_MOVE_TO_MONITOR, MACRO_DISCORD, A(KC_F4), MACRO_ENV, _______, _______, _______, _______, _______, _______, KC_PSCR, _______, _______,          _______,
-        _______,               _______, MACRO_SPOTIFY, _______, _______, _______, _______, _______, _______, _______, _______, _______,                   _______,
+        _______,               _______, MACRO_SPOTIFY, _______, MACRO_FXSOUND, _______, _______, _______, _______, _______, _______, _______,                   _______,
         _______,               _______, _______, KC_CALC, _______, _______, _______, _______, _______, _______, _______, _______,          _______, QK_BOOT,
         _______,               _______, _______,          _______,          _______,          _______, _______,                            _______, _______, TG(_LAYER3)
   ),

@@ -1057,7 +1057,7 @@ END GROUP
 .rela.plt
  *(.rela.plt)
 
-.text           0x00000000     0x4892
+.text           0x00000000     0x48c2
  *(.vectors)
  .vectors       0x00000000       0xac c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
                 0x00000000                __vector_default
@@ -1074,79 +1074,81 @@ END GROUP
  *libc.a:*(.progmem.data)
  *(.progmem.*)
  .progmem.data.__c.0
-                0x000000ac       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+                0x000000ac       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
  .progmem.data.__c.1
-                0x000000bc       0x1e .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+                0x000000c6       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
  .progmem.data.__c.2
-                0x000000da       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+                0x000000d6       0x1e .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
  .progmem.data.__c.3
                 0x000000f4       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+ .progmem.data.__c.4
+                0x0000010e       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
  .progmem.data.keymaps
-                0x0000010e      0x230 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
-                0x0000010e                keymaps
+                0x00000128      0x230 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+                0x00000128                keymaps
  .progmem.data.ascii_to_keycode_lut
-                0x0000033e       0x80 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
-                0x0000033e                ascii_to_keycode_lut
+                0x00000358       0x80 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+                0x00000358                ascii_to_keycode_lut
  .progmem.data.ascii_to_dead_lut
-                0x000003be       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
-                0x000003be                ascii_to_dead_lut
+                0x000003d8       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+                0x000003d8                ascii_to_dead_lut
  .progmem.data.ascii_to_altgr_lut
-                0x000003ce       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
-                0x000003ce                ascii_to_altgr_lut
+                0x000003e8       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+                0x000003e8                ascii_to_altgr_lut
  .progmem.data.ascii_to_shift_lut
-                0x000003de       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
-                0x000003de                ascii_to_shift_lut
+                0x000003f8       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+                0x000003f8                ascii_to_shift_lut
  .progmem.data.ProductString
-                0x000003ee       0x12 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
-                0x000003ee                ProductString
+                0x00000408       0x12 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+                0x00000408                ProductString
  .progmem.data.ManufacturerString
-                0x00000400       0x20 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
-                0x00000400                ManufacturerString
+                0x0000041a       0x20 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+                0x0000041a                ManufacturerString
  .progmem.data.LanguageString
-                0x00000420        0x4 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
-                0x00000420                LanguageString
+                0x0000043a        0x4 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+                0x0000043a                LanguageString
  .progmem.data.ConfigurationDescriptor
-                0x00000424       0x3b .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
-                0x00000424                ConfigurationDescriptor
+                0x0000043e       0x3b .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+                0x0000043e                ConfigurationDescriptor
  .progmem.data.DeviceDescriptor
-                0x0000045f       0x12 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
-                0x0000045f                DeviceDescriptor
+                0x00000479       0x12 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+                0x00000479                DeviceDescriptor
  .progmem.data.SharedReport
-                0x00000471       0xb6 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
-                0x00000471                SharedReport
+                0x0000048b       0xb6 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+                0x0000048b                SharedReport
  .progmem.data.KeyboardReport
-                0x00000527       0x44 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
-                0x00000527                KeyboardReport
-                0x0000056c                        . = ALIGN (0x2)
- *fill*         0x0000056b        0x1 
+                0x00000541       0x44 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+                0x00000541                KeyboardReport
+                0x00000586                        . = ALIGN (0x2)
+ *fill*         0x00000585        0x1 
  *(.lowtext)
  *(.lowtext*)
-                0x0000056c                        __ctors_start = .
+                0x00000586                        __ctors_start = .
  *(.ctors)
-                0x0000056c                        __ctors_end = .
-                0x0000056c                        __dtors_start = .
+                0x00000586                        __ctors_end = .
+                0x00000586                        __dtors_start = .
  *(.dtors)
-                0x0000056c                        __dtors_end = .
+                0x00000586                        __dtors_end = .
  SORT_BY_NAME(*)(.ctors)
  SORT_BY_NAME(*)(.dtors)
  *(.init0)
- .init0         0x0000056c        0x0 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
-                0x0000056c                __init
+ .init0         0x00000586        0x0 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
+                0x00000586                __init
  *(.init0)
  *(.init1)
  *(.init1)
  *(.init2)
- .init2         0x0000056c        0xc c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
+ .init2         0x00000586        0xc c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
  *(.init2)
  *(.init3)
- .init3         0x00000578       0x36 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
-                0x00000578                bootloader_jump_after_watchdog_reset
+ .init3         0x00000592       0x36 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
+                0x00000592                bootloader_jump_after_watchdog_reset
  *(.init3)
  *(.init4)
- .init4         0x000005ae       0x16 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_copy_data.o)
-                0x000005ae                __do_copy_data
- .init4         0x000005c4       0x10 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_clear_bss.o)
-                0x000005c4                __do_clear_bss
+ .init4         0x000005c8       0x16 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_copy_data.o)
+                0x000005c8                __do_copy_data
+ .init4         0x000005de       0x10 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_clear_bss.o)
+                0x000005de                __do_clear_bss
  *(.init4)
  *(.init5)
  *(.init5)
@@ -1157,896 +1159,896 @@ END GROUP
  *(.init8)
  *(.init8)
  *(.init9)
- .init9         0x000005d4        0x8 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
+ .init9         0x000005ee        0x8 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
  *(.init9)
  *(.text)
- .text          0x000005dc        0x4 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
-                0x000005dc                __vector_38
-                0x000005dc                __vector_22
-                0x000005dc                __vector_28
-                0x000005dc                __vector_1
-                0x000005dc                __vector_32
-                0x000005dc                __vector_34
-                0x000005dc                __vector_24
-                0x000005dc                __bad_interrupt
-                0x000005dc                __vector_6
-                0x000005dc                __vector_31
-                0x000005dc                __vector_35
-                0x000005dc                __vector_39
-                0x000005dc                __vector_3
-                0x000005dc                __vector_23
-                0x000005dc                __vector_30
-                0x000005dc                __vector_25
-                0x000005dc                __vector_13
-                0x000005dc                __vector_17
-                0x000005dc                __vector_19
-                0x000005dc                __vector_7
-                0x000005dc                __vector_41
-                0x000005dc                __vector_27
-                0x000005dc                __vector_5
-                0x000005dc                __vector_33
-                0x000005dc                __vector_37
-                0x000005dc                __vector_4
-                0x000005dc                __vector_9
-                0x000005dc                __vector_2
-                0x000005dc                __vector_15
-                0x000005dc                __vector_36
-                0x000005dc                __vector_29
-                0x000005dc                __vector_40
-                0x000005dc                __vector_8
-                0x000005dc                __vector_26
-                0x000005dc                __vector_14
-                0x000005dc                __vector_16
-                0x000005dc                __vector_18
-                0x000005dc                __vector_20
-                0x000005dc                __vector_42
-                0x000005e0                        . = ALIGN (0x2)
+ .text          0x000005f6        0x4 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
+                0x000005f6                __vector_38
+                0x000005f6                __vector_22
+                0x000005f6                __vector_28
+                0x000005f6                __vector_1
+                0x000005f6                __vector_32
+                0x000005f6                __vector_34
+                0x000005f6                __vector_24
+                0x000005f6                __bad_interrupt
+                0x000005f6                __vector_6
+                0x000005f6                __vector_31
+                0x000005f6                __vector_35
+                0x000005f6                __vector_39
+                0x000005f6                __vector_3
+                0x000005f6                __vector_23
+                0x000005f6                __vector_30
+                0x000005f6                __vector_25
+                0x000005f6                __vector_13
+                0x000005f6                __vector_17
+                0x000005f6                __vector_19
+                0x000005f6                __vector_7
+                0x000005f6                __vector_41
+                0x000005f6                __vector_27
+                0x000005f6                __vector_5
+                0x000005f6                __vector_33
+                0x000005f6                __vector_37
+                0x000005f6                __vector_4
+                0x000005f6                __vector_9
+                0x000005f6                __vector_2
+                0x000005f6                __vector_15
+                0x000005f6                __vector_36
+                0x000005f6                __vector_29
+                0x000005f6                __vector_40
+                0x000005f6                __vector_8
+                0x000005f6                __vector_26
+                0x000005f6                __vector_14
+                0x000005f6                __vector_16
+                0x000005f6                __vector_18
+                0x000005f6                __vector_20
+                0x000005f6                __vector_42
+                0x000005fa                        . = ALIGN (0x2)
  *(.text.*)
  .text.process_record_user
-                0x000005e0       0x62 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
-                0x000005e0                process_record_user
+                0x000005fa       0x78 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+                0x000005fa                process_record_user
  .text.keycode_at_keymap_location_raw
-                0x00000642       0x38 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
-                0x00000642                keycode_at_keymap_location_raw
+                0x00000672       0x38 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+                0x00000672                keycode_at_keymap_location_raw
  .text.keycode_at_keymap_location
-                0x0000067a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
-                0x0000067a                keycode_at_keymap_location
+                0x000006aa        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+                0x000006aa                keycode_at_keymap_location
  .text.pre_process_record_user
-                0x00000680        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000680                pre_process_record_user
+                0x000006b0        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000006b0                pre_process_record_user
  .text.pre_process_record_kb
-                0x00000684        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000684                pre_process_record_kb
+                0x000006b4        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000006b4                pre_process_record_kb
  .text.process_action_kb
-                0x0000068a        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x0000068a                process_action_kb
+                0x000006ba        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000006ba                process_action_kb
  .text.process_record_kb
-                0x0000068e        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x0000068e                process_record_kb
+                0x000006be        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000006be                process_record_kb
  .text.post_process_record_user
-                0x00000694        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000694                post_process_record_user
+                0x000006c4        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000006c4                post_process_record_user
  .text.post_process_record_kb
-                0x00000696        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000696                post_process_record_kb
+                0x000006c6        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000006c6                post_process_record_kb
  .text.get_event_keycode
-                0x0000069c       0x5c .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x0000069c                get_event_keycode
+                0x000006cc       0x5c .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000006cc                get_event_keycode
  .text.get_record_keycode
-                0x000006f8       0x16 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x000006f8                get_record_keycode
+                0x00000728       0x16 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x00000728                get_record_keycode
  .text.pre_process_record_quantum
-                0x0000070e       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x0000070e                pre_process_record_quantum
+                0x0000073e       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x0000073e                pre_process_record_quantum
  .text.post_process_record_quantum
-                0x0000072a       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x0000072a                post_process_record_quantum
+                0x0000075a       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x0000075a                post_process_record_quantum
  .text.shutdown_user
-                0x00000746        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000746                shutdown_user
+                0x00000776        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x00000776                shutdown_user
  .text.shutdown_kb
-                0x0000074a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x0000074a                shutdown_kb
+                0x0000077a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x0000077a                shutdown_kb
  .text.shutdown_quantum
-                0x00000750       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000750                shutdown_quantum
+                0x00000780       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x00000780                shutdown_quantum
  .text.reset_keyboard
-                0x00000774        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000774                reset_keyboard
+                0x000007a4        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000007a4                reset_keyboard
  .text.soft_reset_keyboard
-                0x00000780        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000780                soft_reset_keyboard
+                0x000007b0        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000007b0                soft_reset_keyboard
  .text.process_record_quantum
-                0x0000078c       0xaa .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x0000078c                process_record_quantum
+                0x000007bc       0xaa .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x000007bc                process_record_quantum
  .text.suspend_power_down_quantum
-                0x00000836        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000836                suspend_power_down_quantum
+                0x00000866        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x00000866                suspend_power_down_quantum
  .text.suspend_wakeup_init_quantum
-                0x00000840        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
-                0x00000840                suspend_wakeup_init_quantum
+                0x00000870        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+                0x00000870                suspend_wakeup_init_quantum
  .text.led_set_user
-                0x0000084a        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x0000084a                led_set_user
+                0x0000087a        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x0000087a                led_set_user
  .text.led_update_user
-                0x0000084c        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x0000084c                led_update_user
+                0x0000087c        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x0000087c                led_update_user
  .text.led_update_ports
-                0x00000850        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x00000850                led_update_ports
+                0x00000880        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x00000880                led_update_ports
  .text.led_update_kb
-                0x0000085c       0x1e .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x0000085c                led_update_kb
+                0x0000088c       0x1e .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x0000088c                led_update_kb
  .text.led_init_ports
-                0x0000087a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x0000087a                led_init_ports
- .text.led_set  0x00000880       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x00000880                led_set
+                0x000008aa        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x000008aa                led_init_ports
+ .text.led_set  0x000008b0       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x000008b0                led_set
  .text.led_suspend
-                0x00000892        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x00000892                led_suspend
+                0x000008c2        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x000008c2                led_suspend
  .text.led_wakeup
-                0x0000089a        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x0000089a                led_wakeup
+                0x000008ca        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x000008ca                led_wakeup
  .text.led_task
-                0x000008a4       0x32 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
-                0x000008a4                led_task
+                0x000008d4       0x32 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+                0x000008d4                led_task
  .text.action_exec
-                0x000008d6       0x60 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x000008d6                action_exec
+                0x00000906       0x60 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000906                action_exec
  .text.process_record_tap_hint
-                0x00000936       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000936                process_record_tap_hint
+                0x00000966       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000966                process_record_tap_hint
  .text.register_mouse
-                0x00000948       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000948                register_mouse
+                0x00000978       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000978                register_mouse
  .text.register_code
-                0x0000095c      0x124 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x0000095c                register_code
+                0x0000098c      0x124 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x0000098c                register_code
  .text.unregister_code
-                0x00000a80       0xb4 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000a80                unregister_code
+                0x00000ab0       0xb4 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000ab0                unregister_code
  .text.tap_code_delay
-                0x00000b34       0x30 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000b34                tap_code_delay
+                0x00000b64       0x30 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000b64                tap_code_delay
  .text.tap_code
-                0x00000b64       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000b64                tap_code
+                0x00000b94       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000b94                tap_code
  .text.register_mods
-                0x00000b76        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000b76                register_mods
+                0x00000ba6        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000ba6                register_mods
  .text.unregister_mods
-                0x00000b84        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000b84                unregister_mods
+                0x00000bb4        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000bb4                unregister_mods
  .text.process_action
-                0x00000b92      0x3fc .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000b92                process_action
+                0x00000bc2      0x3fc .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000bc2                process_action
  .text.process_record_handler
-                0x00000f8e       0x30 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000f8e                process_record_handler
+                0x00000fbe       0x30 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000fbe                process_record_handler
  .text.process_record
-                0x00000fbe       0x46 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00000fbe                process_record
+                0x00000fee       0x46 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00000fee                process_record
  .text.clear_keyboard_but_mods_and_keys
-                0x00001004       0x22 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00001004                clear_keyboard_but_mods_and_keys
+                0x00001034       0x22 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00001034                clear_keyboard_but_mods_and_keys
  .text.clear_keyboard_but_mods
-                0x00001026        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00001026                clear_keyboard_but_mods
+                0x00001056        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00001056                clear_keyboard_but_mods
  .text.clear_keyboard
-                0x00001030        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00001030                clear_keyboard
+                0x00001060        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x00001060                clear_keyboard
  .text.is_tap_action
-                0x0000103a       0x3a .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x0000103a                is_tap_action
+                0x0000106a       0x3a .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x0000106a                is_tap_action
  .text.is_tap_record
-                0x00001074       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x00001074                is_tap_record
+                0x000010a4       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x000010a4                is_tap_record
  .text.debug_event
-                0x0000108e       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x0000108e                debug_event
+                0x000010be       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x000010be                debug_event
  .text.debug_record
-                0x000010a2       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
-                0x000010a2                debug_record
+                0x000010d2       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x000010d2                debug_record
  .text.default_layer_state_set_user
-                0x000010b6        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000010b6                default_layer_state_set_user
+                0x000010e6        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000010e6                default_layer_state_set_user
  .text.default_layer_state_set_kb
-                0x000010b8        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000010b8                default_layer_state_set_kb
+                0x000010e8        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000010e8                default_layer_state_set_kb
  .text.default_layer_state_set
-                0x000010be        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000010ee        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
  .text.default_layer_debug
-                0x000010cc        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000010cc                default_layer_debug
+                0x000010fc        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000010fc                default_layer_debug
  .text.default_layer_set
-                0x000010ce        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000010ce                default_layer_set
+                0x000010fe        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000010fe                default_layer_set
  .text.default_layer_or
-                0x000010d4       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000010d4                default_layer_or
+                0x00001104       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001104                default_layer_or
  .text.default_layer_and
-                0x000010e6       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000010e6                default_layer_and
+                0x00001116       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001116                default_layer_and
  .text.default_layer_xor
-                0x000010f8       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000010f8                default_layer_xor
+                0x00001128       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001128                default_layer_xor
  .text.layer_state_set_user
-                0x0000110a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x0000110a                layer_state_set_user
+                0x0000113a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x0000113a                layer_state_set_user
  .text.layer_state_set_kb
-                0x00001110        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x00001110                layer_state_set_kb
+                0x00001140        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001140                layer_state_set_kb
  .text.layer_state_set
-                0x00001116        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x00001116                layer_state_set
+                0x00001146        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001146                layer_state_set
  .text.layer_clear
-                0x00001124        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x00001124                layer_clear
+                0x00001154        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001154                layer_clear
  .text.layer_move
-                0x0000112e       0x18 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x0000112e                layer_move
+                0x0000115e       0x18 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x0000115e                layer_move
  .text.layer_on
-                0x00001146       0x20 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x00001146                layer_on
+                0x00001176       0x20 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001176                layer_on
  .text.layer_off
-                0x00001166       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x00001166                layer_off
+                0x00001196       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001196                layer_off
  .text.layer_invert
-                0x0000118a       0x20 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x0000118a                layer_invert
+                0x000011ba       0x20 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000011ba                layer_invert
  .text.layer_or
-                0x000011aa       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000011aa                layer_or
+                0x000011da       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000011da                layer_or
  .text.layer_and
-                0x000011bc       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000011bc                layer_and
+                0x000011ec       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000011ec                layer_and
  .text.layer_xor
-                0x000011ce       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000011ce                layer_xor
+                0x000011fe       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000011fe                layer_xor
  .text.layer_debug
-                0x000011e0        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000011e0                layer_debug
+                0x00001210        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001210                layer_debug
  .text.update_source_layers_cache_impl
-                0x000011e2       0x5a .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000011e2                update_source_layers_cache_impl
+                0x00001212       0x5a .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001212                update_source_layers_cache_impl
  .text.read_source_layers_cache_impl
-                0x0000123c       0x50 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x0000123c                read_source_layers_cache_impl
+                0x0000126c       0x50 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x0000126c                read_source_layers_cache_impl
  .text.update_source_layers_cache
-                0x0000128c       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x0000128c                update_source_layers_cache
+                0x000012bc       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000012bc                update_source_layers_cache
  .text.read_source_layers_cache
-                0x000012b0       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000012b0                read_source_layers_cache
+                0x000012e0       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x000012e0                read_source_layers_cache
  .text.layer_switch_get_layer
-                0x000012d4       0x64 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x000012d4                layer_switch_get_layer
+                0x00001304       0x64 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001304                layer_switch_get_layer
  .text.layer_switch_get_action
-                0x00001338       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x00001338                layer_switch_get_action
+                0x00001368       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001368                layer_switch_get_action
  .text.store_or_get_action
-                0x00001352       0x52 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
-                0x00001352                store_or_get_action
+                0x00001382       0x52 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+                0x00001382                store_or_get_action
  .text.debug_waiting_buffer
-                0x000013a4       0x44 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+                0x000013d4       0x44 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
  .text.debug_tapping_key
-                0x000013e8       0x22 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+                0x00001418       0x22 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
  .text.waiting_buffer_scan_tap
-                0x0000140a       0xa2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+                0x0000143a       0xa2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
  .text.waiting_buffer_typed.isra.0
-                0x000014ac       0x3e .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+                0x000014dc       0x3e .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
  .text.process_tapping
-                0x000014ea      0x2f4 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+                0x0000151a      0x2f4 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
  .text.action_tapping_process
-                0x000017de      0x10c .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
-                0x000017de                action_tapping_process
+                0x0000180e      0x10c .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+                0x0000180e                action_tapping_process
  .text.get_oneshot_layer
-                0x000018ea        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x000018ea                get_oneshot_layer
+                0x0000191a        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x0000191a                get_oneshot_layer
  .text.get_oneshot_layer_state
-                0x000018f6        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x000018f6                get_oneshot_layer_state
+                0x00001926        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001926                get_oneshot_layer_state
  .text.is_oneshot_layer_active
-                0x000018fe       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x000018fe                is_oneshot_layer_active
+                0x0000192e       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x0000192e                is_oneshot_layer_active
  .text.get_mods
-                0x0000190e        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x0000190e                get_mods
+                0x0000193e        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x0000193e                get_mods
  .text.add_mods
-                0x00001914        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001914                add_mods
+                0x00001944        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001944                add_mods
  .text.del_mods
-                0x00001920       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001920                del_mods
+                0x00001950       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001950                del_mods
  .text.clear_mods
-                0x00001930        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001930                clear_mods
+                0x00001960        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001960                clear_mods
  .text.add_weak_mods
-                0x00001936        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001936                add_weak_mods
+                0x00001966        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001966                add_weak_mods
  .text.del_weak_mods
-                0x00001942       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001942                del_weak_mods
+                0x00001972       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001972                del_weak_mods
  .text.clear_weak_mods
-                0x00001952        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001952                clear_weak_mods
+                0x00001982        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001982                clear_weak_mods
  .text.oneshot_locked_mods_changed_user
-                0x00001958        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001958                oneshot_locked_mods_changed_user
+                0x00001988        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001988                oneshot_locked_mods_changed_user
  .text.oneshot_locked_mods_changed_kb
-                0x0000195a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x0000195a                oneshot_locked_mods_changed_kb
+                0x0000198a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x0000198a                oneshot_locked_mods_changed_kb
  .text.del_oneshot_locked_mods
-                0x00001960       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001960                del_oneshot_locked_mods
+                0x00001990       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001990                del_oneshot_locked_mods
  .text.oneshot_mods_changed_user
-                0x0000197a        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x0000197a                oneshot_mods_changed_user
+                0x000019aa        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x000019aa                oneshot_mods_changed_user
  .text.oneshot_mods_changed_kb
-                0x0000197c        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x0000197c                oneshot_mods_changed_kb
+                0x000019ac        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x000019ac                oneshot_mods_changed_kb
  .text.add_oneshot_mods
-                0x00001982       0x18 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001982                add_oneshot_mods
+                0x000019b2       0x18 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x000019b2                add_oneshot_mods
  .text.del_oneshot_mods
-                0x0000199a       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x0000199a                del_oneshot_mods
+                0x000019ca       0x1a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x000019ca                del_oneshot_mods
  .text.clear_oneshot_mods
-                0x000019b4       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x000019b4                clear_oneshot_mods
+                0x000019e4       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x000019e4                clear_oneshot_mods
  .text.get_mods_for_report
-                0x000019c8       0x2a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x000019f8       0x2a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
  .text.send_6kro_report
-                0x000019f2       0x48 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x000019f2                send_6kro_report
+                0x00001a22       0x48 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001a22                send_6kro_report
  .text.send_nkro_report
-                0x00001a3a       0x48 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001a3a                send_nkro_report
+                0x00001a6a       0x48 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001a6a                send_nkro_report
  .text.send_keyboard_report
-                0x00001a82       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001a82                send_keyboard_report
+                0x00001ab2       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001ab2                send_keyboard_report
  .text.oneshot_layer_changed_user
-                0x00001a9e        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001a9e                oneshot_layer_changed_user
+                0x00001ace        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001ace                oneshot_layer_changed_user
  .text.oneshot_layer_changed_kb
-                0x00001aa0        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001aa0                oneshot_layer_changed_kb
+                0x00001ad0        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001ad0                oneshot_layer_changed_kb
  .text.set_oneshot_layer
-                0x00001aa6       0x30 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001aa6                set_oneshot_layer
+                0x00001ad6       0x30 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001ad6                set_oneshot_layer
  .text.reset_oneshot_layer
-                0x00001ad6        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001ad6                reset_oneshot_layer
+                0x00001b06        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001b06                reset_oneshot_layer
  .text.clear_oneshot_layer_state
-                0x00001ae2       0x30 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001ae2                clear_oneshot_layer_state
+                0x00001b12       0x30 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001b12                clear_oneshot_layer_state
  .text.oneshot_set
-                0x00001b12       0x2a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001b12                oneshot_set
+                0x00001b42       0x2a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001b42                oneshot_set
  .text.oneshot_toggle
-                0x00001b3c       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001b3c                oneshot_toggle
+                0x00001b6c       0x14 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001b6c                oneshot_toggle
  .text.oneshot_enable
-                0x00001b50        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001b50                oneshot_enable
+                0x00001b80        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001b80                oneshot_enable
  .text.oneshot_disable
-                0x00001b58        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
-                0x00001b58                oneshot_disable
+                0x00001b88        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+                0x00001b88                oneshot_disable
  .text.eeconfig_disable
-                0x00001b60        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001b60                eeconfig_disable
+                0x00001b90        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001b90                eeconfig_disable
  .text.eeconfig_is_enabled
-                0x00001b6e       0x16 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001b6e                eeconfig_is_enabled
+                0x00001b9e       0x16 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001b9e                eeconfig_is_enabled
  .text.eeconfig_read_debug
-                0x00001b84        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001b84                eeconfig_read_debug
+                0x00001bb4        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001bb4                eeconfig_read_debug
  .text.eeconfig_read_default_layer
-                0x00001b8e        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001b8e                eeconfig_read_default_layer
+                0x00001bbe        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001bbe                eeconfig_read_default_layer
  .text.eeconfig_read_keymap
-                0x00001b98        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001b98                eeconfig_read_keymap
+                0x00001bc8        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001bc8                eeconfig_read_keymap
  .text.eeconfig_update_keymap
-                0x00001ba2        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001ba2                eeconfig_update_keymap
+                0x00001bd2        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001bd2                eeconfig_update_keymap
  .text.eeconfig_update_kb
-                0x00001bae        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001bae                eeconfig_update_kb
+                0x00001bde        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001bde                eeconfig_update_kb
  .text.eeconfig_update_user
-                0x00001bbc        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001bbc                eeconfig_update_user
+                0x00001bec        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001bec                eeconfig_update_user
  .text.eeconfig_init_user
-                0x00001bca        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001bca                eeconfig_init_user
+                0x00001bfa        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001bfa                eeconfig_init_user
  .text.eeconfig_init_kb
-                0x00001bd6       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001bd6                eeconfig_init_kb
+                0x00001c06       0x10 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001c06                eeconfig_init_kb
  .text.eeconfig_init_quantum
-                0x00001be6       0xbe .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001be6                eeconfig_init_quantum
+                0x00001c16       0xbe .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001c16                eeconfig_init_quantum
  .text.eeconfig_init
-                0x00001ca4        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001ca4                eeconfig_init
+                0x00001cd4        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001cd4                eeconfig_init
  .text.eeconfig_update_handedness
-                0x00001caa        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
-                0x00001caa                eeconfig_update_handedness
+                0x00001cda        0xc .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+                0x00001cda                eeconfig_update_handedness
  .text.generate_tick_event
-                0x00001cb6       0x46 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001ce6       0x46 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
  .text.last_matrix_activity_trigger
-                0x00001cfc       0x26 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001cfc                last_matrix_activity_trigger
+                0x00001d2c       0x26 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d2c                last_matrix_activity_trigger
  .text.keyboard_pre_init_user
-                0x00001d22        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d22                keyboard_pre_init_user
+                0x00001d52        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d52                keyboard_pre_init_user
  .text.matrix_setup
-                0x00001d24        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d24                matrix_setup
+                0x00001d54        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d54                matrix_setup
  .text.keyboard_pre_init_kb
-                0x00001d26        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d26                keyboard_pre_init_kb
+                0x00001d56        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d56                keyboard_pre_init_kb
  .text.keyboard_post_init_user
-                0x00001d2c        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d2c                keyboard_post_init_user
+                0x00001d5c        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d5c                keyboard_post_init_user
  .text.keyboard_post_init_kb
-                0x00001d2e        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d2e                keyboard_post_init_kb
+                0x00001d5e        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d5e                keyboard_post_init_kb
  .text.keyboard_setup
-                0x00001d34       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d34                keyboard_setup
+                0x00001d64       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d64                keyboard_setup
  .text.is_keyboard_master
-                0x00001d46        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d46                is_keyboard_master
+                0x00001d76        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d76                is_keyboard_master
  .text.matrix_can_read
-                0x00001d4a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d4a                matrix_can_read
+                0x00001d7a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d7a                matrix_can_read
  .text.should_process_keypress
-                0x00001d50        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d50                should_process_keypress
+                0x00001d80        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d80                should_process_keypress
  .text.housekeeping_task_kb
-                0x00001d56        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d56                housekeeping_task_kb
+                0x00001d86        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d86                housekeeping_task_kb
  .text.housekeeping_task_user
-                0x00001d58        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d58                housekeeping_task_user
+                0x00001d88        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d88                housekeeping_task_user
  .text.housekeeping_task
-                0x00001d5a        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d5a                housekeeping_task
+                0x00001d8a        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d8a                housekeeping_task
  .text.quantum_init
-                0x00001d64       0x3c .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001d64                quantum_init
+                0x00001d94       0x3c .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001d94                quantum_init
  .text.keyboard_init
-                0x00001da0       0x16 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001da0                keyboard_init
+                0x00001dd0       0x16 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001dd0                keyboard_init
  .text.keyboard_task
-                0x00001db6       0xf2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
-                0x00001db6                keyboard_task
+                0x00001de6       0xf2 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+                0x00001de6                keyboard_task
  .text.action_for_keycode
-                0x00001ea8      0x232 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
-                0x00001ea8                action_for_keycode
+                0x00001ed8      0x232 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
+                0x00001ed8                action_for_keycode
  .text.keymap_key_to_keycode
-                0x000020da       0x18 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
-                0x000020da                keymap_key_to_keycode
+                0x0000210a       0x18 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
+                0x0000210a                keymap_key_to_keycode
  .text.action_for_key
-                0x000020f2        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
-                0x000020f2                action_for_key
+                0x00002122        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
+                0x00002122                action_for_key
  .text.keycode_config
-                0x000020fc      0x148 .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
-                0x000020fc                keycode_config
+                0x0000212c      0x148 .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
+                0x0000212c                keycode_config
  .text.mod_config
-                0x00002244       0x9e .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
-                0x00002244                mod_config
+                0x00002274       0x9e .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
+                0x00002274                mod_config
  .text.sendchar
-                0x000022e2        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
-                0x000022e2                sendchar
+                0x00002312        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
+                0x00002312                sendchar
  .text.matrix_init_user
-                0x000022e6        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x000022e6                matrix_init_user
+                0x00002316        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x00002316                matrix_init_user
  .text.matrix_init_kb
-                0x000022e8        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x000022e8                matrix_init_kb
+                0x00002318        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x00002318                matrix_init_kb
  .text.matrix_scan_user
-                0x000022ee        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x000022ee                matrix_scan_user
+                0x0000231e        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x0000231e                matrix_scan_user
  .text.matrix_scan_kb
-                0x000022f0        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x000022f0                matrix_scan_kb
+                0x00002320        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x00002320                matrix_scan_kb
  .text.matrix_get_row
-                0x000022f6       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x000022f6                matrix_get_row
+                0x00002326       0x12 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x00002326                matrix_get_row
  .text.matrix_print
-                0x00002308        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x00002308                matrix_print
+                0x00002338        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x00002338                matrix_print
  .text.matrix_io_delay
-                0x0000230a        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x0000230a                matrix_io_delay
+                0x0000233a        0x8 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x0000233a                matrix_io_delay
  .text.matrix_output_select_delay
-                0x00002312        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x00002312                matrix_output_select_delay
+                0x00002342        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x00002342                matrix_output_select_delay
  .text.matrix_output_unselect_delay
-                0x00002316        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
-                0x00002316                matrix_output_unselect_delay
+                0x00002346        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+                0x00002346                matrix_output_unselect_delay
  .text.setPinInputHigh_atomic
-                0x0000231c       0x32 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+                0x0000234c       0x32 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
  .text.matrix_init_pins
-                0x0000234e       0x40 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
-                0x0000234e                matrix_init_pins
+                0x0000237e       0x40 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+                0x0000237e                matrix_init_pins
  .text.matrix_read_cols_on_row
-                0x0000238e       0xce .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
-                0x0000238e                matrix_read_cols_on_row
+                0x000023be       0xce .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+                0x000023be                matrix_read_cols_on_row
  .text.matrix_init
-                0x0000245c       0x2c .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
-                0x0000245c                matrix_init
+                0x0000248c       0x2c .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+                0x0000248c                matrix_init
  .text.matrix_scan
-                0x00002488       0x7a .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
-                0x00002488                matrix_scan
+                0x000024b8       0x7a .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+                0x000024b8                matrix_scan
  .text.debounce_init
-                0x00002502        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
-                0x00002502                debounce_init
+                0x00002532        0x2 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
+                0x00002532                debounce_init
  .text.debounce
-                0x00002504       0x82 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
-                0x00002504                debounce
+                0x00002534       0x82 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
+                0x00002534                debounce
  .text.protocol_keyboard_task
-                0x00002586        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
-                0x00002586                protocol_keyboard_task
+                0x000025b6        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
+                0x000025b6                protocol_keyboard_task
  .text.startup.main
-                0x0000258c       0x2a .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
-                0x0000258c                main
+                0x000025bc       0x2a .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
+                0x000025bc                main
  .text.print_set_sendchar
-                0x000025b6        0xa .build/obj_fjlabs_polaris_keymap_split/platforms/avr/printf.o
-                0x000025b6                print_set_sendchar
+                0x000025e6        0xa .build/obj_fjlabs_polaris_keymap_split/platforms/avr/printf.o
+                0x000025e6                print_set_sendchar
  .text.bootmagic_reset_eeprom
-                0x000025c0        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
-                0x000025c0                bootmagic_reset_eeprom
+                0x000025f0        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
+                0x000025f0                bootmagic_reset_eeprom
  .text.bootmagic_should_reset
-                0x000025c6        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
-                0x000025c6                bootmagic_should_reset
+                0x000025f6        0xa .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
+                0x000025f6                bootmagic_should_reset
  .text.bootmagic_scan
-                0x000025d0       0x26 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
-                0x000025d0                bootmagic_scan
+                0x00002600       0x26 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
+                0x00002600                bootmagic_scan
  .text.bootmagic
-                0x000025f6        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
-                0x000025f6                bootmagic
+                0x00002626        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
+                0x00002626                bootmagic
  .text.command_common
-                0x000025fc       0xda .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+                0x0000262c       0xda .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
  .text.command_extra
-                0x000026d6        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
-                0x000026d6                command_extra
+                0x00002706        0x4 .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+                0x00002706                command_extra
  .text.command_console_extra
-                0x000026da        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
-                0x000026da                command_console_extra
+                0x0000270a        0x6 .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+                0x0000270a                command_console_extra
  .text.command_proc
-                0x000026e0      0x190 .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
-                0x000026e0                command_proc
+                0x00002710      0x190 .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+                0x00002710                command_proc
  .text.process_grave_esc
-                0x00002870       0x56 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
-                0x00002870                process_grave_esc
+                0x000028a0       0x56 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
+                0x000028a0                process_grave_esc
  .text.process_magic
-                0x000028c6      0x1b8 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
-                0x000028c6                process_magic
+                0x000028f6      0x1b8 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
+                0x000028f6                process_magic
  .text.times_inv_sqrt2
-                0x00002a7e       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002aae       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
  .text.move_unit
-                0x00002a9a       0x90 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002aca       0x90 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
  .text.wheel_unit
-                0x00002b2a       0x78 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002b5a       0x78 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
  .text.mousekey_on
-                0x00002ba2       0xbc .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
-                0x00002ba2                mousekey_on
+                0x00002bd2       0xbc .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002bd2                mousekey_on
  .text.mousekey_off
-                0x00002c5e       0xf0 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
-                0x00002c5e                mousekey_off
+                0x00002c8e       0xf0 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002c8e                mousekey_off
  .text.mousekey_send
-                0x00002d4e       0x3a .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
-                0x00002d4e                mousekey_send
+                0x00002d7e       0x3a .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002d7e                mousekey_send
  .text.mousekey_clear
-                0x00002d88       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
-                0x00002d88                mousekey_clear
+                0x00002db8       0x1c .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002db8                mousekey_clear
  .text.should_mousekey_report_send
-                0x00002da4       0x26 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
-                0x00002da4                should_mousekey_report_send
+                0x00002dd4       0x26 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002dd4                should_mousekey_report_send
  .text.mousekey_task
-                0x00002dca      0x1e0 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
-                0x00002dca                mousekey_task
+                0x00002dfa      0x1e0 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x00002dfa                mousekey_task
  .text.send_char_with_delay
-                0x00002faa      0x148 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
-                0x00002faa                send_char_with_delay
+                0x00002fda      0x148 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+                0x00002fda                send_char_with_delay
  .text.send_string_with_delay_P
-                0x000030f2       0xc2 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
-                0x000030f2                send_string_with_delay_P
+                0x00003122       0xc2 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+                0x00003122                send_string_with_delay_P
  .text.perform_space_cadet
-                0x000031b4       0xde .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
-                0x000031b4                perform_space_cadet
+                0x000031e4       0xde .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
+                0x000031e4                perform_space_cadet
  .text.process_space_cadet
-                0x00003292       0x82 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
-                0x00003292                process_space_cadet
+                0x000032c2       0x82 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
+                0x000032c2                process_space_cadet
  .text.host_set_driver
-                0x00003314        0xa .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
-                0x00003314                host_set_driver
+                0x00003344        0xa .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+                0x00003344                host_set_driver
  .text.host_keyboard_leds
-                0x0000331e       0x1a .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
-                0x0000331e                host_keyboard_leds
+                0x0000334e       0x1a .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+                0x0000334e                host_keyboard_leds
  .text.host_keyboard_led_state
-                0x00003338        0x6 .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
-                0x00003338                host_keyboard_led_state
+                0x00003368        0x6 .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+                0x00003368                host_keyboard_led_state
  .text.host_keyboard_send
-                0x0000333e       0x16 .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
-                0x0000333e                host_keyboard_send
+                0x0000336e       0x16 .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+                0x0000336e                host_keyboard_send
  .text.host_nkro_send
-                0x00003354       0x1e .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
-                0x00003354                host_nkro_send
+                0x00003384       0x1e .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+                0x00003384                host_nkro_send
  .text.host_mouse_send
-                0x00003372       0x1e .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
-                0x00003372                host_mouse_send
+                0x000033a2       0x1e .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+                0x000033a2                host_mouse_send
  .text.host_system_send
-                0x00003390       0x4c .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
-                0x00003390                host_system_send
+                0x000033c0       0x4c .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+                0x000033c0                host_system_send
  .text.host_consumer_send
-                0x000033dc       0x4c .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
-                0x000033dc                host_consumer_send
+                0x0000340c       0x4c .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+                0x0000340c                host_consumer_send
  .text.has_anykey
-                0x00003428       0x42 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x00003428                has_anykey
+                0x00003458       0x42 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x00003458                has_anykey
  .text.is_key_pressed
-                0x0000346a       0x72 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x0000346a                is_key_pressed
+                0x0000349a       0x72 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x0000349a                is_key_pressed
  .text.add_key_byte
-                0x000034dc       0x34 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x000034dc                add_key_byte
+                0x0000350c       0x34 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x0000350c                add_key_byte
  .text.del_key_byte
-                0x00003510       0x1e .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x00003510                del_key_byte
+                0x00003540       0x1e .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x00003540                del_key_byte
  .text.add_key_bit
-                0x0000352e       0x28 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x0000352e                add_key_bit
+                0x0000355e       0x28 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x0000355e                add_key_bit
  .text.del_key_bit
-                0x00003556       0x30 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x00003556                del_key_bit
+                0x00003586       0x30 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x00003586                del_key_bit
  .text.add_key_to_report
-                0x00003586       0x2e .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x00003586                add_key_to_report
+                0x000035b6       0x2e .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x000035b6                add_key_to_report
  .text.del_key_from_report
-                0x000035b4       0x2e .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x000035b4                del_key_from_report
+                0x000035e4       0x2e .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x000035e4                del_key_from_report
  .text.clear_keys_from_report
-                0x000035e2       0x34 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x000035e2                clear_keys_from_report
+                0x00003612       0x34 .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x00003612                clear_keys_from_report
  .text.has_mouse_report_changed
-                0x00003616       0x5a .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
-                0x00003616                has_mouse_report_changed
+                0x00003646       0x5a .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+                0x00003646                has_mouse_report_changed
  .text.notify_usb_device_state_change_user
-                0x00003670        0x2 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
-                0x00003670                notify_usb_device_state_change_user
+                0x000036a0        0x2 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+                0x000036a0                notify_usb_device_state_change_user
  .text.notify_usb_device_state_change_kb
-                0x00003672        0x6 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
-                0x00003672                notify_usb_device_state_change_kb
- .text.usb_device_state_set_configuration
-                0x00003678        0xc .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
-                0x00003678                usb_device_state_set_configuration
- .text.usb_device_state_set_suspend
-                0x00003684        0xc .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
-                0x00003684                usb_device_state_set_suspend
- .text.usb_device_state_set_resume
-                0x00003690        0x6 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
-                0x00003690                usb_device_state_set_resume
- .text.usb_device_state_set_reset
-                0x00003696        0xc .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
-                0x00003696                usb_device_state_set_reset
- .text.usb_device_state_init
                 0x000036a2        0x6 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
-                0x000036a2                usb_device_state_init
+                0x000036a2                notify_usb_device_state_change_kb
+ .text.usb_device_state_set_configuration
+                0x000036a8        0xc .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+                0x000036a8                usb_device_state_set_configuration
+ .text.usb_device_state_set_suspend
+                0x000036b4        0xc .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+                0x000036b4                usb_device_state_set_suspend
+ .text.usb_device_state_set_resume
+                0x000036c0        0x6 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+                0x000036c0                usb_device_state_set_resume
+ .text.usb_device_state_set_reset
+                0x000036c6        0xc .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+                0x000036c6                usb_device_state_set_reset
+ .text.usb_device_state_init
+                0x000036d2        0x6 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+                0x000036d2                usb_device_state_init
  .text.suspend_wakeup_init_user
-                0x000036a8        0x2 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
-                0x000036a8                suspend_wakeup_init_user
+                0x000036d8        0x2 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+                0x000036d8                suspend_wakeup_init_user
  .text.suspend_power_down_user
-                0x000036aa        0x2 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
-                0x000036aa                suspend_power_down_user
+                0x000036da        0x2 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+                0x000036da                suspend_power_down_user
  .text.suspend_power_down_kb
-                0x000036ac        0x6 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
-                0x000036ac                suspend_power_down_kb
+                0x000036dc        0x6 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+                0x000036dc                suspend_power_down_kb
  .text.matrix_power_up
-                0x000036b2        0x2 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
-                0x000036b2                matrix_power_up
+                0x000036e2        0x2 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+                0x000036e2                matrix_power_up
  .text.matrix_power_down
-                0x000036b4        0x2 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
-                0x000036b4                matrix_power_down
+                0x000036e4        0x2 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+                0x000036e4                matrix_power_down
  .text.suspend_wakeup_init_kb
-                0x000036b6        0x6 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
-                0x000036b6                suspend_wakeup_init_kb
+                0x000036e6        0x6 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+                0x000036e6                suspend_wakeup_init_kb
  .text.suspend_wakeup_condition
-                0x000036bc       0x2a .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
-                0x000036bc                suspend_wakeup_condition
+                0x000036ec       0x2a .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+                0x000036ec                suspend_wakeup_condition
  .text.platform_setup
-                0x000036e6        0xe .build/obj_fjlabs_polaris_keymap_split/platforms/avr/platform.o
-                0x000036e6                platform_setup
+                0x00003716        0xe .build/obj_fjlabs_polaris_keymap_split/platforms/avr/platform.o
+                0x00003716                platform_setup
  .text.__vector_12
-                0x000036f4       0x4e .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
-                0x000036f4                __vector_12
+                0x00003724       0x4e .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
+                0x00003724                __vector_12
  .text.suspend_power_down
-                0x00003742       0x56 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
-                0x00003742                suspend_power_down
+                0x00003772       0x56 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
+                0x00003772                suspend_power_down
  .text.suspend_wakeup_init
-                0x00003798        0xa .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
-                0x00003798                suspend_wakeup_init
+                0x000037c8        0xa .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
+                0x000037c8                suspend_wakeup_init
  .text.timer_init
-                0x000037a2       0x12 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
-                0x000037a2                timer_init
+                0x000037d2       0x12 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+                0x000037d2                timer_init
  .text.timer_read
-                0x000037b4       0x18 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
-                0x000037b4                timer_read
+                0x000037e4       0x18 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+                0x000037e4                timer_read
  .text.timer_read32
-                0x000037cc       0x3a .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
-                0x000037cc                timer_read32
+                0x000037fc       0x3a .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+                0x000037fc                timer_read32
  .text.timer_elapsed
-                0x00003806       0x1e .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
-                0x00003806                timer_elapsed
+                0x00003836       0x1e .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+                0x00003836                timer_elapsed
  .text.__vector_21
-                0x00003824       0x48 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
-                0x00003824                __vector_21
+                0x00003854       0x48 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+                0x00003854                __vector_21
  .text.bootloader_jump
-                0x0000386c       0x48 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
-                0x0000386c                bootloader_jump
+                0x0000389c       0x48 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
+                0x0000389c                bootloader_jump
  .text.mcu_reset
-                0x000038b4       0x16 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
-                0x000038b4                mcu_reset
+                0x000038e4       0x16 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
+                0x000038e4                mcu_reset
  .text.keyboard_leds
-                0x000038ca        0x6 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x000038fa        0x6 .build/obj_fjlabs_polaris_keymap_split/lufa.o
  .text.send_report
-                0x000038d0       0x48 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x000038d0                send_report
+                0x00003900       0x48 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003900                send_report
  .text.send_extra
-                0x00003918        0xe .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003948        0xe .build/obj_fjlabs_polaris_keymap_split/lufa.o
  .text.send_mouse
-                0x00003926        0xe .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003956        0xe .build/obj_fjlabs_polaris_keymap_split/lufa.o
  .text.send_nkro
-                0x00003934        0xe .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003964        0xe .build/obj_fjlabs_polaris_keymap_split/lufa.o
  .text.send_keyboard
-                0x00003942       0x2e .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003972       0x2e .build/obj_fjlabs_polaris_keymap_split/lufa.o
  .text.EVENT_USB_Device_Connect
-                0x00003970       0x1c .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003970                EVENT_USB_Device_Connect
+                0x000039a0       0x1c .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x000039a0                EVENT_USB_Device_Connect
  .text.EVENT_USB_Device_Disconnect
-                0x0000398c        0x6 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x0000398c                EVENT_USB_Device_Disconnect
+                0x000039bc        0x6 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x000039bc                EVENT_USB_Device_Disconnect
  .text.EVENT_USB_Device_Reset
-                0x00003992        0x6 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003992                EVENT_USB_Device_Reset
+                0x000039c2        0x6 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x000039c2                EVENT_USB_Device_Reset
  .text.EVENT_USB_Device_Suspend
-                0x00003998       0x12 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003998                EVENT_USB_Device_Suspend
+                0x000039c8       0x12 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x000039c8                EVENT_USB_Device_Suspend
  .text.EVENT_USB_Device_WakeUp
-                0x000039aa       0x16 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x000039aa                EVENT_USB_Device_WakeUp
+                0x000039da       0x16 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x000039da                EVENT_USB_Device_WakeUp
  .text.EVENT_USB_Device_ConfigurationChanged
-                0x000039c0       0x2a .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x000039c0                EVENT_USB_Device_ConfigurationChanged
+                0x000039f0       0x2a .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x000039f0                EVENT_USB_Device_ConfigurationChanged
  .text.EVENT_USB_Device_ControlRequest
-                0x000039ea      0x172 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x000039ea                EVENT_USB_Device_ControlRequest
+                0x00003a1a      0x172 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003a1a                EVENT_USB_Device_ControlRequest
  .text.protocol_setup
-                0x00003b5c       0x34 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003b5c                protocol_setup
+                0x00003b8c       0x34 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003b8c                protocol_setup
  .text.protocol_pre_init
-                0x00003b90       0x1a .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003b90                protocol_pre_init
+                0x00003bc0       0x1a .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003bc0                protocol_pre_init
  .text.protocol_post_init
-                0x00003baa        0xa .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003baa                protocol_post_init
+                0x00003bda        0xa .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003bda                protocol_post_init
  .text.protocol_pre_task
-                0x00003bb4       0x34 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003bb4                protocol_pre_task
+                0x00003be4       0x34 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003be4                protocol_pre_task
  .text.protocol_post_task
-                0x00003be8        0x2 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003be8                protocol_post_task
+                0x00003c18        0x2 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003c18                protocol_post_task
  .text.CALLBACK_USB_GetDescriptor
-                0x00003bea       0x10 .build/obj_fjlabs_polaris_keymap_split/lufa.o
-                0x00003bea                CALLBACK_USB_GetDescriptor
+                0x00003c1a       0x10 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+                0x00003c1a                CALLBACK_USB_GetDescriptor
  .text.get_usb_descriptor
-                0x00003bfa       0xb2 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
-                0x00003bfa                get_usb_descriptor
+                0x00003c2a       0xb2 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+                0x00003c2a                get_usb_descriptor
  .text.USB_Device_SendRemoteWakeup
-                0x00003cac       0x2a .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
-                0x00003cac                USB_Device_SendRemoteWakeup
+                0x00003cdc       0x2a .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+                0x00003cdc                USB_Device_SendRemoteWakeup
  .text.Endpoint_Write_Stream_LE
-                0x00003cd6       0x9e .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x00003cd6                Endpoint_Write_Stream_LE
+                0x00003d06       0x9e .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x00003d06                Endpoint_Write_Stream_LE
  .text.Endpoint_Write_Control_Stream_LE
-                0x00003d74       0xb4 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x00003d74                Endpoint_Write_Control_Stream_LE
+                0x00003da4       0xb4 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x00003da4                Endpoint_Write_Control_Stream_LE
  .text.Endpoint_Write_Control_PStream_LE
-                0x00003e28       0xb6 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
-                0x00003e28                Endpoint_Write_Control_PStream_LE
+                0x00003e58       0xb6 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+                0x00003e58                Endpoint_Write_Control_PStream_LE
  .text.Endpoint_ConfigureEndpoint_Prv
-                0x00003ede       0x68 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x00003ede                Endpoint_ConfigureEndpoint_Prv
+                0x00003f0e       0x68 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00003f0e                Endpoint_ConfigureEndpoint_Prv
  .text.Endpoint_ClearStatusStage
-                0x00003f46       0x3e .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x00003f46                Endpoint_ClearStatusStage
+                0x00003f76       0x3e .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00003f76                Endpoint_ClearStatusStage
  .text.Endpoint_WaitUntilReady
-                0x00003f84       0x62 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
-                0x00003f84                Endpoint_WaitUntilReady
+                0x00003fb4       0x62 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+                0x00003fb4                Endpoint_WaitUntilReady
  .text.USB_Disable
-                0x00003fe6       0x34 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
-                0x00003fe6                USB_Disable
+                0x00004016       0x34 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x00004016                USB_Disable
  .text.USB_ResetInterface
-                0x0000401a       0x86 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
-                0x0000401a                USB_ResetInterface
+                0x0000404a       0x86 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x0000404a                USB_ResetInterface
  .text.USB_Init
-                0x000040a0       0x24 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
-                0x000040a0                USB_Init
+                0x000040d0       0x24 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+                0x000040d0                USB_Init
  .text.USB_INT_DisableAllInterrupts
-                0x000040c4       0x10 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x000040c4                USB_INT_DisableAllInterrupts
+                0x000040f4       0x10 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x000040f4                USB_INT_DisableAllInterrupts
  .text.USB_INT_ClearAllInterrupts
-                0x000040d4        0xa .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x000040d4                USB_INT_ClearAllInterrupts
+                0x00004104        0xa .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x00004104                USB_INT_ClearAllInterrupts
  .text.__vector_10
-                0x000040de      0x1a0 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x000040de                __vector_10
+                0x0000410e      0x1a0 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x0000410e                __vector_10
  .text.__vector_11
-                0x0000427e       0x92 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
-                0x0000427e                __vector_11
+                0x000042ae       0x92 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+                0x000042ae                __vector_11
  .text.USB_Device_ProcessControlRequest
-                0x00004310      0x28e .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
-                0x00004310                USB_Device_ProcessControlRequest
+                0x00004340      0x28e .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x00004340                USB_Device_ProcessControlRequest
  .text.USB_Event_Stub
-                0x0000459e        0x2 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
-                0x0000459e                EVENT_USB_Device_StartOfFrame
-                0x0000459e                USB_Event_Stub
+                0x000045ce        0x2 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
+                0x000045ce                EVENT_USB_Device_StartOfFrame
+                0x000045ce                USB_Event_Stub
  .text.USB_USBTask
-                0x000045a0       0x34 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
-                0x000045a0                USB_USBTask
+                0x000045d0       0x34 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
+                0x000045d0                USB_USBTask
  .text.libgcc.div
-                0x000045d4       0x28 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_divmodhi4.o)
-                0x000045d4                _div
-                0x000045d4                __divmodhi4
- .text.libgcc   0x000045fc        0xc c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_tablejump2.o)
-                0x000045fc                __tablejump2__
+                0x00004604       0x28 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_divmodhi4.o)
+                0x00004604                _div
+                0x00004604                __divmodhi4
+ .text.libgcc   0x0000462c        0xc c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_tablejump2.o)
+                0x0000462c                __tablejump2__
  .text.libgcc.prologue
-                0x00004608       0x38 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_prologue.o)
-                0x00004608                __prologue_saves__
+                0x00004638       0x38 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_prologue.o)
+                0x00004638                __prologue_saves__
  .text.libgcc.prologue
-                0x00004640       0x36 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_epilogue.o)
-                0x00004640                __epilogue_restores__
+                0x00004670       0x36 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_epilogue.o)
+                0x00004670                __epilogue_restores__
  .text.libgcc.div
-                0x00004676       0x28 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_udivmodhi4.o)
-                0x00004676                __udivmodhi4
+                0x000046a6       0x28 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_udivmodhi4.o)
+                0x000046a6                __udivmodhi4
  .text.avr-libc
-                0x0000469e       0x1a c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libc.a(memcmp.o)
-                0x0000469e                memcmp
+                0x000046ce       0x1a c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libc.a(memcmp.o)
+                0x000046ce                memcmp
  .text.avr-libc
-                0x000046b8       0x12 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
-                0x000046b8                memcpy
+                0x000046e8       0x12 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libc.a(memcpy.o)
+                0x000046e8                memcpy
  .text.avr-libc
-                0x000046ca       0x10 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eerd_byte.o)
-                0x000046ca                eeprom_read_byte
+                0x000046fa       0x10 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eerd_byte.o)
+                0x000046fa                eeprom_read_byte
  .text.avr-libc
-                0x000046da        0xc c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eerd_word.o)
-                0x000046da                eeprom_read_word
+                0x0000470a        0xc c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eerd_word.o)
+                0x0000470a                eeprom_read_word
  .text.avr-libc
-                0x000046e6       0x20 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eeupd_block.o)
-                0x000046e6                eeprom_update_block
+                0x00004716       0x20 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eeupd_block.o)
+                0x00004716                eeprom_update_block
  .text.avr-libc
-                0x00004706       0x24 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eeupd_byte.o)
-                0x00004706                eeprom_update_byte
-                0x00004708                eeprom_update_r18
+                0x00004736       0x24 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eeupd_byte.o)
+                0x00004736                eeprom_update_byte
+                0x00004738                eeprom_update_r18
  .text.avr-libc
-                0x0000472a       0x18 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eeupd_dword.o)
-                0x0000472a                eeprom_update_float
-                0x0000472a                eeprom_update_dword
+                0x0000475a       0x18 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eeupd_dword.o)
+                0x0000475a                eeprom_update_float
+                0x0000475a                eeprom_update_dword
  .text.avr-libc
-                0x00004742        0xc c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eeupd_word.o)
-                0x00004742                eeprom_update_word
+                0x00004772        0xc c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eeupd_word.o)
+                0x00004772                eeprom_update_word
  .text.avr-libc
-                0x0000474e       0x20 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eerd_block.o)
-                0x0000474e                eeprom_read_block
-                0x00004752                eeprom_read_blraw
-                0x0000476e                        . = ALIGN (0x2)
+                0x0000477e       0x20 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5\libatmega32u4.a(eerd_block.o)
+                0x0000477e                eeprom_read_block
+                0x00004782                eeprom_read_blraw
+                0x0000479e                        . = ALIGN (0x2)
  *(.fini9)
- .fini9         0x0000476e        0x0 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_exit.o)
-                0x0000476e                _exit
-                0x0000476e                exit
+ .fini9         0x0000479e        0x0 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_exit.o)
+                0x0000479e                _exit
+                0x0000479e                exit
  *(.fini9)
  *(.fini8)
  *(.fini8)
@@ -2065,29 +2067,29 @@ END GROUP
  *(.fini1)
  *(.fini1)
  *(.fini0)
- .fini0         0x0000476e        0x4 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_exit.o)
+ .fini0         0x0000479e        0x4 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/avr5\libgcc.a(_exit.o)
  *(.fini0)
  *(.hightext)
  *(.hightext*)
  *(.progmemx.*)
-                0x00004772                        . = ALIGN (0x2)
+                0x000047a2                        . = ALIGN (0x2)
  *(.jumptables)
  *(.jumptables*)
  .jumptables.gcc.process_action
-                0x00004772       0x18 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+                0x000047a2       0x18 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
  .jumptables.gcc.command_common
-                0x0000478a       0x7e .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+                0x000047ba       0x7e .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
  .jumptables.gcc.process_magic
-                0x00004808       0x44 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
+                0x00004838       0x44 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
  .jumptables.gcc.mousekey_on
-                0x0000484c       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+                0x0000487c       0x24 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
  .jumptables.gcc.process_space_cadet
-                0x00004870        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
+                0x000048a0        0xe .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
  .jumptables.gcc.USB_Device_ProcessControlRequest
-                0x0000487e       0x14 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
-                0x00004892                        _etext = .
+                0x000048ae       0x14 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+                0x000048c2                        _etext = .
 
-.data           0x00800100       0x96 load address 0x00004892
+.data           0x00800100       0x96 load address 0x000048c2
                 0x00800100                        PROVIDE (__data_start = .)
  *(.data)
  *(.data*)
@@ -2261,8 +2263,8 @@ END GROUP
                 0x008002b9                USB_DeviceState
                 0x008002ba                USB_ControlRequest
                 0x008002c2                        PROVIDE (__bss_end = .)
-                0x00004892                        __data_load_start = LOADADDR (.data)
-                0x00004928                        __data_load_end = (__data_load_start + SIZEOF (.data))
+                0x000048c2                        __data_load_start = LOADADDR (.data)
+                0x00004958                        __data_load_end = (__data_load_start + SIZEOF (.data))
 
 .noinit         0x008002c2        0x4
                 [!provide]                        PROVIDE (__noinit_start = .)
@@ -2469,52 +2471,52 @@ END GROUP
 .debug_pubnames
  *(.debug_pubnames)
 
-.debug_info     0x00000000    0x30f94
+.debug_info     0x00000000    0x30fbb
  *(.debug_info .gnu.linkonce.wi.*)
  .debug_info    0x00000000      0x9f4 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
- .debug_info    0x000009f4     0x29a1 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
- .debug_info    0x00003395     0x3591 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
- .debug_info    0x00006926      0x481 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
- .debug_info    0x00006da7     0x437f .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
- .debug_info    0x0000b126      0xd8d .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
- .debug_info    0x0000beb3     0x2d37 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
- .debug_info    0x0000ebea      0xdcb .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
- .debug_info    0x0000f9b5      0x915 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
- .debug_info    0x000102ca      0xc68 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
- .debug_info    0x00010f32     0x2d14 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
- .debug_info    0x00013c46     0x2551 .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
- .debug_info    0x00016197      0x117 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/debug.o
- .debug_info    0x000162ae       0xa8 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
- .debug_info    0x00016356      0x54c .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
- .debug_info    0x000168a2      0x6fa .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
- .debug_info    0x00016f9c      0x2e6 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
- .debug_info    0x00017282      0x172 .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
- .debug_info    0x000173f4       0xe7 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/printf.o
- .debug_info    0x000174db      0x2a4 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
- .debug_info    0x0001777f     0x2977 .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
- .debug_info    0x0001a0f6     0x26a1 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
- .debug_info    0x0001c797     0x26e0 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
- .debug_info    0x0001ee77     0x2947 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
- .debug_info    0x000217be     0x3037 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
- .debug_info    0x000247f5     0x270a .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
- .debug_info    0x00026eff      0x80c .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
- .debug_info    0x0002770b     0x299e .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
- .debug_info    0x0002a0a9      0x2ad .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
- .debug_info    0x0002a356      0x19b .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
- .debug_info    0x0002a4f1       0xa9 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/platform.o
- .debug_info    0x0002a59a      0x22e .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
- .debug_info    0x0002a7c8      0x443 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
- .debug_info    0x0002ac0b      0x238 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
- .debug_info    0x0002ae43     0x13fe .build/obj_fjlabs_polaris_keymap_split/lufa.o
- .debug_info    0x0002c241      0x836 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
- .debug_info    0x0002ca77       0xfc .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
- .debug_info    0x0002cb73     0x1d82 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
- .debug_info    0x0002e8f5      0x727 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
- .debug_info    0x0002f01c      0x5aa .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
- .debug_info    0x0002f5c6      0x9ae .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
- .debug_info    0x0002ff74      0xc65 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
- .debug_info    0x00030bd9       0xf0 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
- .debug_info    0x00030cc9      0x2cb .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_info    0x000009f4     0x29c8 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+ .debug_info    0x000033bc     0x3591 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+ .debug_info    0x0000694d      0x481 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+ .debug_info    0x00006dce     0x437f .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+ .debug_info    0x0000b14d      0xd8d .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+ .debug_info    0x0000beda     0x2d37 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+ .debug_info    0x0000ec11      0xdcb .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+ .debug_info    0x0000f9dc      0x915 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+ .debug_info    0x000102f1      0xc68 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+ .debug_info    0x00010f59     0x2d14 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
+ .debug_info    0x00013c6d     0x2551 .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
+ .debug_info    0x000161be      0x117 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/debug.o
+ .debug_info    0x000162d5       0xa8 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
+ .debug_info    0x0001637d      0x54c .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+ .debug_info    0x000168c9      0x6fa .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+ .debug_info    0x00016fc3      0x2e6 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
+ .debug_info    0x000172a9      0x172 .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
+ .debug_info    0x0001741b       0xe7 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/printf.o
+ .debug_info    0x00017502      0x2a4 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
+ .debug_info    0x000177a6     0x2977 .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+ .debug_info    0x0001a11d     0x26a1 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
+ .debug_info    0x0001c7be     0x26e0 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
+ .debug_info    0x0001ee9e     0x2947 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+ .debug_info    0x000217e5     0x3037 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+ .debug_info    0x0002481c     0x270a .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
+ .debug_info    0x00026f26      0x80c .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+ .debug_info    0x00027732     0x299e .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+ .debug_info    0x0002a0d0      0x2ad .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+ .debug_info    0x0002a37d      0x19b .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+ .debug_info    0x0002a518       0xa9 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/platform.o
+ .debug_info    0x0002a5c1      0x22e .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
+ .debug_info    0x0002a7ef      0x443 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+ .debug_info    0x0002ac32      0x238 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
+ .debug_info    0x0002ae6a     0x13fe .build/obj_fjlabs_polaris_keymap_split/lufa.o
+ .debug_info    0x0002c268      0x836 .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+ .debug_info    0x0002ca9e       0xfc .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_info    0x0002cb9a     0x1d82 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_info    0x0002e91c      0x727 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_info    0x0002f043      0x5aa .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_info    0x0002f5ed      0x9ae .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_info    0x0002ff9b      0xc65 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_info    0x00030c00       0xf0 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
+ .debug_info    0x00030cf0      0x2cb .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
 
 .debug_abbrev   0x00000000     0x66a6
  *(.debug_abbrev)
@@ -2563,52 +2565,52 @@ END GROUP
  .debug_abbrev  0x00006474       0x89 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
  .debug_abbrev  0x000064fd      0x1a9 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
 
-.debug_line     0x00000000    0x13809
+.debug_line     0x00000000    0x13837
  *(.debug_line .debug_line.* .debug_line_end)
  .debug_line    0x00000000       0x1d c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
- .debug_line    0x0000001d      0x2e6 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
- .debug_line    0x00000303      0xd87 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
- .debug_line    0x0000108a      0x333 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
- .debug_line    0x000013bd     0x1ae5 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
- .debug_line    0x00002ea2      0xaf0 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
- .debug_line    0x00003992      0xcbc .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
- .debug_line    0x0000464e      0xc02 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
- .debug_line    0x00005250      0x582 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
- .debug_line    0x000057d2      0x953 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
- .debug_line    0x00006125      0x51c .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
- .debug_line    0x00006641      0x4ab .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
- .debug_line    0x00006aec       0x6c .build/obj_fjlabs_polaris_keymap_split/quantum/logging/debug.o
- .debug_line    0x00006b58       0x8d .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
- .debug_line    0x00006be5      0x460 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
- .debug_line    0x00007045      0x5c6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
- .debug_line    0x0000760b      0x281 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
- .debug_line    0x0000788c       0xd5 .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
- .debug_line    0x00007961       0xae .build/obj_fjlabs_polaris_keymap_split/platforms/avr/printf.o
- .debug_line    0x00007a0f      0x204 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
- .debug_line    0x00007c13      0x81a .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
- .debug_line    0x0000842d      0x216 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
- .debug_line    0x00008643      0x46e .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
- .debug_line    0x00008ab1      0xe03 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
- .debug_line    0x000098b4      0xe26 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
- .debug_line    0x0000a6da      0x398 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
- .debug_line    0x0000aa72      0x445 .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
- .debug_line    0x0000aeb7      0x7ca .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
- .debug_line    0x0000b681      0x1cd .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
- .debug_line    0x0000b84e      0x19a .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
- .debug_line    0x0000b9e8       0xaf .build/obj_fjlabs_polaris_keymap_split/platforms/avr/platform.o
- .debug_line    0x0000ba97      0x279 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
- .debug_line    0x0000bd10      0x4a2 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
- .debug_line    0x0000c1b2      0x25f .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
- .debug_line    0x0000c411      0xeba .build/obj_fjlabs_polaris_keymap_split/lufa.o
- .debug_line    0x0000d2cb      0x2ca .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
- .debug_line    0x0000d595      0x1aa .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
- .debug_line    0x0000d73f     0x332f .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
- .debug_line    0x00010a6e      0x9b6 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
- .debug_line    0x00011424      0x655 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
- .debug_line    0x00011a79      0xcc1 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
- .debug_line    0x0001273a      0xda3 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
- .debug_line    0x000134dd       0xe1 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
- .debug_line    0x000135be      0x24b .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_line    0x0000001d      0x314 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+ .debug_line    0x00000331      0xd87 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+ .debug_line    0x000010b8      0x333 .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+ .debug_line    0x000013eb     0x1ae5 .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+ .debug_line    0x00002ed0      0xaf0 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+ .debug_line    0x000039c0      0xcbc .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+ .debug_line    0x0000467c      0xc02 .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+ .debug_line    0x0000527e      0x582 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+ .debug_line    0x00005800      0x953 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+ .debug_line    0x00006153      0x51c .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
+ .debug_line    0x0000666f      0x4ab .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
+ .debug_line    0x00006b1a       0x6c .build/obj_fjlabs_polaris_keymap_split/quantum/logging/debug.o
+ .debug_line    0x00006b86       0x8d .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
+ .debug_line    0x00006c13      0x460 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+ .debug_line    0x00007073      0x5c6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+ .debug_line    0x00007639      0x281 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
+ .debug_line    0x000078ba       0xd5 .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
+ .debug_line    0x0000798f       0xae .build/obj_fjlabs_polaris_keymap_split/platforms/avr/printf.o
+ .debug_line    0x00007a3d      0x204 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
+ .debug_line    0x00007c41      0x81a .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+ .debug_line    0x0000845b      0x216 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
+ .debug_line    0x00008671      0x46e .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
+ .debug_line    0x00008adf      0xe03 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+ .debug_line    0x000098e2      0xe26 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+ .debug_line    0x0000a708      0x398 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
+ .debug_line    0x0000aaa0      0x445 .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+ .debug_line    0x0000aee5      0x7ca .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+ .debug_line    0x0000b6af      0x1cd .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+ .debug_line    0x0000b87c      0x19a .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+ .debug_line    0x0000ba16       0xaf .build/obj_fjlabs_polaris_keymap_split/platforms/avr/platform.o
+ .debug_line    0x0000bac5      0x279 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
+ .debug_line    0x0000bd3e      0x4a2 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+ .debug_line    0x0000c1e0      0x25f .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
+ .debug_line    0x0000c43f      0xeba .build/obj_fjlabs_polaris_keymap_split/lufa.o
+ .debug_line    0x0000d2f9      0x2ca .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+ .debug_line    0x0000d5c3      0x1aa .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_line    0x0000d76d     0x332f .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_line    0x00010a9c      0x9b6 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_line    0x00011452      0x655 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_line    0x00011aa7      0xcc1 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_line    0x00012768      0xda3 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_line    0x0001350b       0xe1 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
+ .debug_line    0x000135ec      0x24b .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
 
 .debug_frame    0x00000000     0x239c
  *(.debug_frame)
@@ -2655,93 +2657,93 @@ END GROUP
  .debug_frame   0x0000232c       0x44 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
  .debug_frame   0x00002370       0x2c .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
 
-.debug_str      0x00000000     0x93bd
+.debug_str      0x00000000     0x93cb
  *(.debug_str)
  .debug_str     0x00000000      0x371 c:/qmk_msys/mingw64/bin/../lib/gcc/avr/12.2.0/../../../../avr/lib/avr5/crtatmega32u4.o
- .debug_str     0x00000371     0x904c .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
-                               0x4752 (size before relaxing)
- .debug_str     0x000093bd     0x4b18 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
- .debug_str     0x000093bd      0x38b .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
- .debug_str     0x000093bd     0x503d .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
- .debug_str     0x000093bd      0x5f9 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
- .debug_str     0x000093bd     0x4607 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
- .debug_str     0x000093bd      0x81a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
- .debug_str     0x000093bd      0x4d8 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
- .debug_str     0x000093bd      0x996 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
- .debug_str     0x000093bd     0x4b64 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
- .debug_str     0x000093bd     0x432b .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
- .debug_str     0x000093bd      0x235 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/debug.o
- .debug_str     0x000093bd      0x1fb .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
- .debug_str     0x000093bd      0x3dc .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
- .debug_str     0x000093bd      0x3d6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
- .debug_str     0x000093bd      0x2f2 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
- .debug_str     0x000093bd      0x29e .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
- .debug_str     0x000093bd      0x220 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/printf.o
- .debug_str     0x000093bd      0x2f4 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
- .debug_str     0x000093bd     0x453a .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
- .debug_str     0x000093bd     0x43ca .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
- .debug_str     0x000093bd     0x4424 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
- .debug_str     0x000093bd     0x4414 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
- .debug_str     0x000093bd     0x43a8 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
- .debug_str     0x000093bd     0x4370 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
- .debug_str     0x000093bd      0x5a3 .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
- .debug_str     0x000093bd     0x444b .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
- .debug_str     0x000093bd      0x383 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
- .debug_str     0x000093bd      0x2b4 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
- .debug_str     0x000093bd      0x205 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/platform.o
- .debug_str     0x000093bd      0x373 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
- .debug_str     0x000093bd      0x295 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
- .debug_str     0x000093bd      0x2ae .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
- .debug_str     0x000093bd      0xd1a .build/obj_fjlabs_polaris_keymap_split/lufa.o
- .debug_str     0x000093bd      0xa7a .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
- .debug_str     0x000093bd      0x25c .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
- .debug_str     0x000093bd      0x8be .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
- .debug_str     0x000093bd      0x67e .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
- .debug_str     0x000093bd      0x5bd .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
- .debug_str     0x000093bd      0x63c .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
- .debug_str     0x000093bd      0xa0d .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
- .debug_str     0x000093bd      0x235 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
- .debug_str     0x000093bd      0x3e3 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_str     0x00000371     0x905a .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+                               0x4760 (size before relaxing)
+ .debug_str     0x000093cb     0x4b18 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+ .debug_str     0x000093cb      0x38b .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+ .debug_str     0x000093cb     0x503d .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+ .debug_str     0x000093cb      0x5f9 .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+ .debug_str     0x000093cb     0x4607 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+ .debug_str     0x000093cb      0x81a .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+ .debug_str     0x000093cb      0x4d8 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+ .debug_str     0x000093cb      0x996 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+ .debug_str     0x000093cb     0x4b64 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
+ .debug_str     0x000093cb     0x432b .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
+ .debug_str     0x000093cb      0x235 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/debug.o
+ .debug_str     0x000093cb      0x1fb .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
+ .debug_str     0x000093cb      0x3dc .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+ .debug_str     0x000093cb      0x3d6 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+ .debug_str     0x000093cb      0x2f2 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
+ .debug_str     0x000093cb      0x29e .build/obj_fjlabs_polaris_keymap_split/quantum/main.o
+ .debug_str     0x000093cb      0x220 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/printf.o
+ .debug_str     0x000093cb      0x2f4 .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
+ .debug_str     0x000093cb     0x453a .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+ .debug_str     0x000093cb     0x43ca .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
+ .debug_str     0x000093cb     0x4424 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
+ .debug_str     0x000093cb     0x4414 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+ .debug_str     0x000093cb     0x43a8 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+ .debug_str     0x000093cb     0x4370 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
+ .debug_str     0x000093cb      0x5a3 .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+ .debug_str     0x000093cb     0x444b .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+ .debug_str     0x000093cb      0x383 .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+ .debug_str     0x000093cb      0x2b4 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+ .debug_str     0x000093cb      0x205 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/platform.o
+ .debug_str     0x000093cb      0x373 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
+ .debug_str     0x000093cb      0x295 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+ .debug_str     0x000093cb      0x2ae .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
+ .debug_str     0x000093cb      0xd1a .build/obj_fjlabs_polaris_keymap_split/lufa.o
+ .debug_str     0x000093cb      0xa7a .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+ .debug_str     0x000093cb      0x25c .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Device_AVR8.o
+ .debug_str     0x000093cb      0x8be .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_str     0x000093cb      0x67e .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_str     0x000093cb      0x5bd .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_str     0x000093cb      0x63c .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_str     0x000093cb      0xa0d .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_str     0x000093cb      0x235 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/Events.o
+ .debug_str     0x000093cb      0x3e3 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
 
-.debug_loc      0x00000000     0xae24
+.debug_loc      0x00000000     0xae48
  *(.debug_loc)
- .debug_loc     0x00000000      0x21f .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
- .debug_loc     0x0000021f      0xc56 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
- .debug_loc     0x00000e75      0x19d .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
- .debug_loc     0x00001012      0xc3f .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
- .debug_loc     0x00001c51      0x99a .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
- .debug_loc     0x000025eb      0x625 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
- .debug_loc     0x00002c10      0x3cf .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
- .debug_loc     0x00002fdf      0x1f2 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
- .debug_loc     0x000031d1      0x3d5 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
- .debug_loc     0x000035a6      0x819 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
- .debug_loc     0x00003dbf      0x225 .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
- .debug_loc     0x00003fe4       0x25 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
- .debug_loc     0x00004009      0x22b .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
- .debug_loc     0x00004234      0x480 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
- .debug_loc     0x000046b4      0x1d7 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
- .debug_loc     0x0000488b       0x4e .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
- .debug_loc     0x000048d9      0x36e .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
- .debug_loc     0x00004c47      0x16d .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
- .debug_loc     0x00004db4       0xb9 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
- .debug_loc     0x00004e6d      0x3d6 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
- .debug_loc     0x00005243     0x1100 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
- .debug_loc     0x00006343      0x39c .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
- .debug_loc     0x000066df      0x15c .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
- .debug_loc     0x0000683b      0x41b .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
- .debug_loc     0x00006c56      0x11b .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
- .debug_loc     0x00006d71       0x52 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
- .debug_loc     0x00006dc3       0x52 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
- .debug_loc     0x00006e15      0x2b9 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
- .debug_loc     0x000070ce       0x78 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
- .debug_loc     0x00007146      0x4e8 .build/obj_fjlabs_polaris_keymap_split/lufa.o
- .debug_loc     0x0000762e      0x20c .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
- .debug_loc     0x0000783a     0x27ac .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
- .debug_loc     0x00009fe6      0x4d8 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
- .debug_loc     0x0000a4be       0xf9 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
- .debug_loc     0x0000a5b7      0x495 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
- .debug_loc     0x0000aa4c      0x376 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
- .debug_loc     0x0000adc2       0x62 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
+ .debug_loc     0x00000000      0x243 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_introspection.o
+ .debug_loc     0x00000243      0xc56 .build/obj_fjlabs_polaris_keymap_split/quantum/quantum.o
+ .debug_loc     0x00000e99      0x19d .build/obj_fjlabs_polaris_keymap_split/quantum/led.o
+ .debug_loc     0x00001036      0xc3f .build/obj_fjlabs_polaris_keymap_split/quantum/action.o
+ .debug_loc     0x00001c75      0x99a .build/obj_fjlabs_polaris_keymap_split/quantum/action_layer.o
+ .debug_loc     0x0000260f      0x625 .build/obj_fjlabs_polaris_keymap_split/quantum/action_tapping.o
+ .debug_loc     0x00002c34      0x3cf .build/obj_fjlabs_polaris_keymap_split/quantum/action_util.o
+ .debug_loc     0x00003003      0x1f2 .build/obj_fjlabs_polaris_keymap_split/quantum/eeconfig.o
+ .debug_loc     0x000031f5      0x3d5 .build/obj_fjlabs_polaris_keymap_split/quantum/keyboard.o
+ .debug_loc     0x000035ca      0x819 .build/obj_fjlabs_polaris_keymap_split/quantum/keymap_common.o
+ .debug_loc     0x00003de3      0x225 .build/obj_fjlabs_polaris_keymap_split/quantum/keycode_config.o
+ .debug_loc     0x00004008       0x25 .build/obj_fjlabs_polaris_keymap_split/quantum/logging/sendchar.o
+ .debug_loc     0x0000402d      0x22b .build/obj_fjlabs_polaris_keymap_split/quantum/matrix_common.o
+ .debug_loc     0x00004258      0x480 .build/obj_fjlabs_polaris_keymap_split/quantum/matrix.o
+ .debug_loc     0x000046d8      0x1d7 .build/obj_fjlabs_polaris_keymap_split/quantum/debounce/sym_defer_g.o
+ .debug_loc     0x000048af       0x4e .build/obj_fjlabs_polaris_keymap_split/quantum/bootmagic/bootmagic.o
+ .debug_loc     0x000048fd      0x36e .build/obj_fjlabs_polaris_keymap_split/quantum/command.o
+ .debug_loc     0x00004c6b      0x16d .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_grave_esc.o
+ .debug_loc     0x00004dd8       0xb9 .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_magic.o
+ .debug_loc     0x00004e91      0x3d6 .build/obj_fjlabs_polaris_keymap_split/quantum/mousekey.o
+ .debug_loc     0x00005267     0x1100 .build/obj_fjlabs_polaris_keymap_split/quantum/send_string/send_string.o
+ .debug_loc     0x00006367      0x39c .build/obj_fjlabs_polaris_keymap_split/quantum/process_keycode/process_space_cadet.o
+ .debug_loc     0x00006703      0x15c .build/obj_fjlabs_polaris_keymap_split/protocol/host.o
+ .debug_loc     0x0000685f      0x41b .build/obj_fjlabs_polaris_keymap_split/protocol/report.o
+ .debug_loc     0x00006c7a      0x11b .build/obj_fjlabs_polaris_keymap_split/protocol/usb_device_state.o
+ .debug_loc     0x00006d95       0x52 .build/obj_fjlabs_polaris_keymap_split/platforms/suspend.o
+ .debug_loc     0x00006de7       0x52 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/suspend.o
+ .debug_loc     0x00006e39      0x2b9 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/timer.o
+ .debug_loc     0x000070f2       0x78 .build/obj_fjlabs_polaris_keymap_split/platforms/avr/bootloaders/dfu.o
+ .debug_loc     0x0000716a      0x4e8 .build/obj_fjlabs_polaris_keymap_split/lufa.o
+ .debug_loc     0x00007652      0x20c .build/obj_fjlabs_polaris_keymap_split/usb_descriptor.o
+ .debug_loc     0x0000785e     0x27ac .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/EndpointStream_AVR8.o
+ .debug_loc     0x0000a00a      0x4d8 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/Endpoint_AVR8.o
+ .debug_loc     0x0000a4e2       0xf9 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBController_AVR8.o
+ .debug_loc     0x0000a5db      0x495 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/AVR8/USBInterrupt_AVR8.o
+ .debug_loc     0x0000aa70      0x376 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/DeviceStandardReq.o
+ .debug_loc     0x0000ade6       0x62 .build/obj_fjlabs_polaris_keymap_split/lib/lufa/LUFA/Drivers/USB/Core/USBTask.o
 
 .debug_macinfo
  *(.debug_macinfo)
