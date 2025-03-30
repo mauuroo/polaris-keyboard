@@ -20,7 +20,7 @@ enum custom_keycodes {
     MACRO_ENV,                  //Macro para activar entorno virtual
     MACRO_MOVE_TO_MONITOR,       //Macro para mover ventana a otro monitor
     MACRO_FXSOUND,              //Macro para enfocar FXSound
-    MACRO_CPP
+    MACRO_CPP                   //Macro for snippet vscode (c++)
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
@@ -79,7 +79,7 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_LAYER1] = LAYOUT_all( /* Fn_space */
         KC_GRAVE,         KC_F1,  KC_F2,    KC_F3,           KC_F4,             KC_F5,          KC_F6,   KC_F7,   KC_F8,   KC_F9,   KC_F10,  KC_F11,  KC_F12,   _______,  _______,
         _______,          _______, KC_UP,   _______,         _______,           _______,        _______, _______, KC_INS,  KC_DEL,  _______, _______, _______,  _______,
-        _______,          KC_LEFT, KC_DOWN, KC_RIGHT,        KC_HOME,           _______,        _______, KC_END,  _______, _______, _______, _______,           _______,
+        _______,          KC_LEFT, KC_DOWN, KC_RIGHT,        KC_HOME,           _______,        _______, KC_END,  _______, _______, S(KC_LCTL), _______,           _______,
         _______, _______, _______, _______, KC_VOLD,         KC_VOLU,           _______,        RALT(KC_N), _______, KC_MPRV, KC_MPLY, KC_MNXT,          _______,  _______,
         _______, _______, _______,          _______,         _______,           _______,        _______,                                     _______, _______,  _______
     ),
