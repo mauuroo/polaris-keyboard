@@ -20,24 +20,25 @@ enum custom_keycodes {
     MACRO_ENV,                  //Macro para activar entorno virtual
     MACRO_MOVE_TO_MONITOR,       //Macro para mover ventana a otro monitor
     MACRO_FXSOUND,              //Macro para enfocar FXSound
-    MACRO_CPP                   //Macro for snippet vscode (c++)
+    MACRO_CPP,                   //Macro snippet vscode (c++)
+    MACRO_SAMSUNGFLOW           //Macro para samsung flow
 };
 
 bool process_record_user(uint16_t keycode, keyrecord_t *record) {
     switch (keycode) {
         case MACRO_DISCORD:
             if (record->event.pressed) {
-                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "discord" SS_DELAY(200) SS_TAP(X_ENTER));
+                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "discord" SS_DELAY(300) SS_TAP(X_ENTER));
             }
             break;
         case MACRO_SPOTIFY:
             if (record->event.pressed) {
-                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "spotify" SS_DELAY(200) SS_TAP(X_ENTER));
+                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "spotify" SS_DELAY(300) SS_TAP(X_ENTER));
             }
             break;
         case MACRO_ENV:
             if (record->event.pressed) {
-                SEND_STRING("env/scripts/activate" SS_DELAY(500) SS_TAP(X_ENTER));
+                SEND_STRING("env/scripts/activate" SS_DELAY(300) SS_TAP(X_ENTER));
             }
             break;
         case MACRO_MOVE_TO_MONITOR:
@@ -47,12 +48,17 @@ bool process_record_user(uint16_t keycode, keyrecord_t *record) {
             break;
         case MACRO_FXSOUND:
             if (record->event.pressed) {
-                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "FxSound" SS_DELAY(200) SS_TAP(X_ENTER));
+                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "FxSound" SS_DELAY(300) SS_TAP(X_ENTER));
             }
             break;
         case MACRO_CPP:
             if (record -> event.pressed) {
-                SEND_STRING("maincpp" SS_DELAY(100) SS_TAP(X_TAB));
+                SEND_STRING("maincpp" SS_DELAY(250) SS_TAP(X_TAB));
+            }
+            break;
+        case MACRO_SAMSUNGFLOW:
+            if (record -> event.pressed) {
+                SEND_STRING(SS_DOWN(X_LALT) SS_TAP(X_SPACE) SS_UP(X_LALT) "samsung flow" SS_DELAY(300) SS_TAP(X_ENTER));
             }
             break;
     }
@@ -86,8 +92,8 @@ const uint16_t PROGMEM keymaps[][MATRIX_ROWS][MATRIX_COLS] = {
     [_LAYER2] = LAYOUT_all( /* Capslock Layer (for macros)*/
         C(KC_GRAVE),           _______,  _______, MACRO_CPP, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______, _______,
         MACRO_MOVE_TO_MONITOR, MACRO_DISCORD, A(KC_F4), MACRO_ENV, _______, _______, _______, _______, _______, _______, KC_PSCR, _______, _______,          _______,
-        _______,               _______, MACRO_SPOTIFY, _______, MACRO_FXSOUND, _______, _______, _______, _______, _______, _______, _______,                   _______,
-        _______,               _______, _______, KC_CALC, _______, _______, _______, _______, _______, _______, _______, _______,          _______, QK_BOOT,
+        _______,               _______, MACRO_SPOTIFY, _______, MACRO_SAMSUNGFLOW, _______, _______, _______, _______, _______, _______, _______,                   _______,
+        _______,               _______, MACRO_FXSOUND, KC_CALC, _______, _______, _______, _______, _______, _______, _______, _______,          _______, QK_BOOT,
         _______,               _______, _______,          _______,          _______,          _______, _______,                            _______, _______, TG(_LAYER3)
   ),
     [_LAYER3] = LAYOUT_all( /* Layer without LT space for specific things*/
