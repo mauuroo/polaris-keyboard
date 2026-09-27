@@ -5,6 +5,7 @@ Keyboard configuration using the polaris hotswap pcb by FjLaboratories
 
 ## Weight
 ![alt text](img/weight.png)
+![alt text](img/weight_2.jpg)
 
 ## Keyboard
 ![alt text](img/keyboard_keycaps.jpg)
